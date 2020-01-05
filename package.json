@@ -1,7 +1,7 @@
 {
   "name": "gestion-toupah",
   "version": "1.0.0",
-  "description": "bootstrap project for initialization of a project with sprinboot server side and react front side",
+  "description": "Projet de gestion des cotisations des habitants de Toupah",
   "main": "index.jsx",
   "author": "Ines Beugré",
   "license": "MIT",
