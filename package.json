@@ -1,0 +1,21 @@
+{
+  "name": "gestion-toupah",
+  "version": "1.0.0",
+  "description": "bootstrap project for initialization of a project with sprinboot server side and react front side",
+  "main": "index.jsx",
+  "author": "Ines Beugré",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel --public-url / src/main/resources/app/index.html --out-dir target/classes/static",
+    "build": "parcel build --public-url / src/main/resources/app/index.html --out-dir target/classes/static",
+    "watch": "parcel watch --public-url / src/main/resources/app/index.html --out-dir target/classes/static --no-hmr"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
