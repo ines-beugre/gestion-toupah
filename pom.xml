@@ -69,22 +69,12 @@
 
     <!---->
     <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <excludes>
-                    <exclude>app/**</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>application.properties</include>
-                </includes>
-            </resource>
-        </resources>
         <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
             <plugin>
                 <groupId>com.github.eirslett</groupId>
                 <artifactId>frontend-maven-plugin</artifactId>
@@ -135,15 +125,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <outputDirectory>build</outputDirectory>
-                </configuration>
-            </plugin>
         </plugins>
-        <finalName>gestion-toupah</finalName>
     </build>
     <!---->
 </project>
